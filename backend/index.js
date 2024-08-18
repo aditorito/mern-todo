@@ -59,5 +59,14 @@ app.put("/completed", async function (req, res) {
 
 })
 
+app.delete("/delete/:todoId", async function (req,res) {
+    const id = req.params.todoId;
+    
+    const to = await todo.findById(id);       
+    await todo.deleteOne({
+        _id:id
+    }) 
+    
+})
 const port = 3000;
 app.listen(port);

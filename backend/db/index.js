@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { string } = require('zod');
 
-mongoose.connect('mongodb+srv://AdityaPratap:3bR6SQIb8dhmnqtd@cluster0.p5yi9c8.mongodb.net/todo-app');
+mongoose.connect('mongodb+srv://AdityaPratap:qoYeY20Bkg1E45rK@cluster0.p5yi9c8.mongodb.net/todo-app');
 
 
 const todoSchema = new mongoose.Schema({
